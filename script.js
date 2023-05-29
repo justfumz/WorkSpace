@@ -268,21 +268,28 @@ console.log("-------------")
 for (let m in mark){
     console.log(m)
 }
-
+console.log("-------------")
 
 const yearOfBirth = [1996, 2019, 2007, 1985];
 const calcAge = [];
 
 for (i=0; i < yearOfBirth.length; i++){
-    let age = 2023 - yearOfBirth[i];
-    console.log(age)
-
-    calcAge.push[age]
+    calcAge.push (2023 - yearOfBirth[i]);
 }
-
+console.log(calcAge)
 
 console.log("-------------")
-console.log(calcAge)
-// for (let t in yearOfBirth){
-//     console.log(2023 - yearOfBirth[t])
-// }
+
+
+const arr = [
+    "Anu", 
+    "Feyisara", 
+    "Folashade", 
+    2008-1998,
+    ["Anu","moyosore", "Feyisara"]
+];
+
+
+for (let i=arr[4].length; i>=0; i--){
+    console.log(arr[4][i]);
+}
