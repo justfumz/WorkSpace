@@ -24,7 +24,6 @@
 // //     console.log (`John's BMI (${bmiJohn}) is higher than Mark's BMI (${bmiMark})`)
 // // }
 
-
 // // const firstName = "Esther";
 // // const lastName = "Gbagbeolu";
 // // const job = "programmer";
@@ -32,7 +31,6 @@
 // // const year = 2023;
 
 // // console.log (`I'm ${firstName} ${lastName}, a ${year - birthYear} years old ${job}`)
-
 
 // // const person = 12;
 
@@ -44,7 +42,6 @@
 // // let dolphinsAVG = (96 + 108 + 89) / 3 ;
 // // let koalasAVG = (88 + 91 + 110) / 3;
 // // console.log( `Team Dolphin score ${dolphinsAVG} while Team Koala scores ${koalasAVG}`)
-
 
 // //     if (dolphinsAVG > 100 && koalasAVG > 100){
 // //         if (dolphinsAVG > koalasAVG){
@@ -61,7 +58,7 @@
 // //     //Switchhhhhh
 
 // //     let day = 1;
-    
+
 // //     switch (day){
 // //         case 1: console.log("Today is a Sunday!")
 // //             break;
@@ -95,14 +92,12 @@
 // const sum = (a,b) => a+b;
 // console.log (sum (2,9));
 
-
 // //Function expression
 // const fruit = (oranges, apples) => {
-//     return `We have ${oranges} oranges and ${apples} apples 
+//     return `We have ${oranges} oranges and ${apples} apples
 //     to make the fruit juice`
 // }
 // console.log(fruit (9,24))
-
 
 // //Function Declaration
 // function age (birthYear){
@@ -110,7 +105,6 @@
 // }
 
 // console.log(`You're ${age(1995)} years old`);
-
 
 // // coding challenge 5 -- Functions
 
@@ -124,7 +118,7 @@
 //     }else if (avgKoalas > avgDolphins * 2){
 //         return `Koalas win (${avgKoalas} vs. ${avgDolphins})`
 //     }else{
-//         return `No team wins! Dolphins have a score of ${avgDolphins} 
+//         return `No team wins! Dolphins have a score of ${avgDolphins}
 //         while Koalas have a score of ${avgKoalas}`
 //     }
 // }
@@ -150,8 +144,7 @@
 //     const bills = [125,555,44];
 //     const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 
-//     console.log (bills, tips); 
-
+//     console.log (bills, tips);
 
 //     const arr = ["Anu", "Feyisara", "Folashade", 2008-1998, ["Anu","moyosore", "Feyisara"]];
 //     console.log(arr[4][1])
@@ -165,8 +158,8 @@
 //     // //Objects
 
 //     // const obj = {
-//     //     firstName: "Funmi", 
-//     //     lastName: "Gbagbeolu", 
+//     //     firstName: "Funmi",
+//     //     lastName: "Gbagbeolu",
 //     //     age : 2023-1998,
 //     //     friends : ["Anu", "Feyisara", "Folashade"]
 //     // }
@@ -176,14 +169,13 @@
 //     // console.log(obj["age"])
 
 //     // const interestedIn = prompt ("What do you wanna know about obj? firstName,lastName, age or friends?")
- 
+
 //     // console.log (obj[interestedIn])
 
-    
 //     //challenge 0bj...>>array
 
 //     const person = {
-//         name: "Jonas", 
+//         name: "Jonas",
 //         birthYear : 1991,
 //         friends : ["Micheal", "Peter", "Steven"],
 //         job: "teacher" ,
@@ -196,7 +188,7 @@
 //         getSummary : function (){
 //             return (`${this.name} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`)
 //         }
-//     } 
+//     }
 
 //     //Dot Notation
 //     console.log(`${person.name} has ${(person.friends).length} friends and his best friend is called ${person.friends[2]}`)
@@ -205,91 +197,148 @@
 //     console.log(`${person['name']} has ${person['friends'].length} friends and his best friend is called ${person['friends'][0]} `)
 
 //     console.log (person.calcAge());
-//     console.log(person['calcAge']()) 
+//     console.log(person['calcAge']())
 
 // console.log (person.getSummary());
 
+// const mark = {
+//     fullName: "Mark Miller",
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function(){
+//         return this.mass / (this.height * 2);
+//     }
+// }
+// const markBMI = mark.calcBMI();
 
-const mark = {
-    fullName: "Mark Miller",
-    mass: 78,
-    height: 1.69,
-    calcBMI: function(){
-        return this.mass / (this.height * 2);
-    }
-}
-const markBMI = mark.calcBMI();
+// const john = {
+//     fullName: "John Smith",
+//     mass: 92,
+//     height:1.95,
+//     calcBMI: function(){
+//         return this.mass / (this.height * 2);
+//     }
+// }
+// const johnBMI = john.calcBMI();
 
-const john = {
-    fullName: "John Smith",
-    mass: 92,
-    height:1.95,
-    calcBMI: function(){
-        return this.mass / (this.height * 2);
-    }
-}
-const johnBMI = john.calcBMI();
+// console.log(markBMI, johnBMI);
 
-console.log(markBMI, johnBMI);
-
-if ( markBMI > johnBMI){
-    console.log (`${mark.fullName}'s BMI (${markBMI}) is higher than ${john.fullName}'s BMI (${johnBMI})`)
-}else{
-    console.log (`${john.fullName}'s BMI (${johnBMI}) is higher than ${mark.fullName}'s BMI (${markBMI})`)
-}
-
-//The FOR LOOP
-
-
-
-// for (let i=1; i<=12; i++){
-//     product=5*i;
-//     console.log(`5 * ${i} = ${product}`);
+// if ( markBMI > johnBMI){
+//     console.log (`${mark.fullName}'s BMI (${markBMI}) is higher than ${john.fullName}'s BMI (${johnBMI})`)
+// }else{
+//     console.log (`${john.fullName}'s BMI (${johnBMI}) is higher than ${mark.fullName}'s BMI (${markBMI})`)
 // }
 
-// for (let rep=1; rep<=10; rep++){
-//     console.log(`Lifting Weights ${rep}!🏋️‍♀️`)
+// //The FOR LOOP
+
+// // for (let i=1; i<=12; i++){
+// //     product=5*i;
+// //     console.log(`5 * ${i} = ${product}`);
+// // }
+
+// // for (let rep=1; rep<=10; rep++){
+// //     console.log(`Lifting Weights ${rep}!🏋️‍♀️`)
+// // }
+
+// const fumz = ["Mark", "Miller", 78, 1.69]
+
+// for (let i=0; i<fumz.length; i++){
+//     console.log(fumz[i])
 // }
 
-const fumz = ["Mark", "Miller", 78, 1.69]
+// console.log("-------------")
 
-for (let i=0; i<fumz.length; i++){
-    console.log(fumz[i])
+// for (let d of fumz){
+//     console.log(d)
+// }
+
+// console.log("-------------")
+
+// for (let m in mark){
+//     console.log(m)
+// }
+// console.log("-------------")
+
+// const yearOfBirth = [1996, 2019, 2007, 1985];
+// const calcAge = [];
+
+// for (i=0; i < yearOfBirth.length; i++){
+//     calcAge.push (2023 - yearOfBirth[i]);
+// }
+// console.log(calcAge)
+
+// console.log("-------------")
+
+// const arr = [
+//     "Anu",
+//     "Feyisara",
+//     "Folashade",
+//     2008-1998,
+//     ["Anu","moyosore", "Feyisara"]
+// ];
+
+// for (let i=arr[4].length; i>=0; i--){
+//     console.log(arr[4][i]);
+// }
+
+// //Loop within a loop
+
+// for (let i=1; i<3; i++){
+//     console.log(`----Starting our number ${i} loop 🔄`)
+//         for (let test=1; test<=3; test++){
+//             console.log(`Loop ${i}: We are looping number ${test} within a loop🏋️‍♀️`)
+//         }
+// }
+
+// //The while loop
+// console.log("-------------")
+
+// let rep=0;
+// while (rep<=2){
+//     console.log(`WHILE: Lifting weights ${rep} 🏋️‍♀️`);
+//     rep++;
+// }
+
+// console.log("-------------")
+
+// // Math.random() produces any random decimal number between 0 and 1
+// // Math.truns makes Math.random produce a whole number instead of a decimal one
+// let dice = Math.trunc(Math.random() * 6) + 1 // since a dice has 6 numbers 1-6)
+
+// while (dice !== 6){
+//     console.log(`You rolled a ${dice}!`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+
+//     if (dice === 6){
+//         console.log(`Congratulations! You rolled a ${dice}!`);
+//     }
+// }
+
+//-----CODING CHALLENGEEEEEEE!!!!-----
+
+const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+const calcTip = (bill) => {
+  return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
+};
+
+for (i = 0; i < bill.length; i++) {
+  tips.push(calcTip(bill[i]));
+  totals.push(bill[i] + tips[i]);
 }
 
-console.log("-------------")
+console.log(bill, tips, totals);
 
-for (let d of fumz){
-    console.log(d)
-}
+const calcAverage = (arr) => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
 
-console.log("-------------")
+console.log(calcAverage([2, 4, 6]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
 
-for (let m in mark){
-    console.log(m)
-}
-console.log("-------------")
-
-const yearOfBirth = [1996, 2019, 2007, 1985];
-const calcAge = [];
-
-for (i=0; i < yearOfBirth.length; i++){
-    calcAge.push (2023 - yearOfBirth[i]);
-}
-console.log(calcAge)
-
-console.log("-------------")
-
-
-const arr = [
-    "Anu", 
-    "Feyisara", 
-    "Folashade", 
-    2008-1998,
-    ["Anu","moyosore", "Feyisara"]
-];
-
-
-for (let i=arr[4].length; i>=0; i--){
-    console.log(arr[4][i]);
-}
