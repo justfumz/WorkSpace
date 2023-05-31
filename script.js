@@ -314,31 +314,48 @@
 //     }
 // }
 
-//-----CODING CHALLENGEEEEEEE!!!!-----
+// //-----CODING CHALLENGEEEEEEE!!!!-----
 
-const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const tips = [];
-const totals = [];
-const calcTip = (bill) => {
-  return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
-};
+// const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
+// const calcTip = (bill) => {
+//   return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
+// };
 
-for (i = 0; i < bill.length; i++) {
-  tips.push(calcTip(bill[i]));
-  totals.push(bill[i] + tips[i]);
-}
+// for (i = 0; i < bill.length; i++) {
+//   tips.push(calcTip(bill[i]));
+//   totals.push(bill[i] + tips[i]);
+// }
 
-console.log(bill, tips, totals);
+// console.log(bill, tips, totals);
 
-const calcAverage = (arr) => {
-  let sum = 0;
+// const calcAverage = (arr) => {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum / arr.length;
+// };
+
+// console.log(calcAverage([2, 4, 6]));
+
+// console.log(calcAverage(totals));
+
+// console.log(calcAverage(tips));
+
+// const temp = [[-3, 4 - 2, -1], "error", 19, 10, 6];
+
+// const amp = Math.max(19, 10, 6) - Math.min(-3, 4 - 2, -1);
+// console.log(amp);
+// console.log(Math.max(19, 10, 6));
+
+let str = "... ";
+const printForecast = function (arr) {
+  arr = [17, 21, 23, -5, 18];
   for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
+    str = str + `${arr[i]}°C in ${i + 1} days ... `;
   }
-  return sum / arr.length;
+  console.log(str);
 };
-
-console.log(calcAverage([2, 4, 6]));
-console.log(calcAverage(totals));
-console.log(calcAverage(tips));
-
+console.log(printForecast());
