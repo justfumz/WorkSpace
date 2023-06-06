@@ -356,6 +356,18 @@ const printForecast = function (arr) {
   for (let i = 0; i < arr.length; i++) {
     str = str + `${arr[i]}°C in ${i + 1} days ... `;
   }
-  console.log(str);
+  return str;
 };
 console.log(printForecast());
+
+let sent = "...";
+
+const foreCast = (ar) => {
+  ar = [29, 50, 10, 7];
+  for (let i = 0; i < ar.length; i++) {
+    sent = sent + `${ar[i]}ºC in ${i + 1} days...`;
+  }
+  return sent;
+};
+
+console.log(foreCast());
